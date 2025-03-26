@@ -1,0 +1,150 @@
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.6); /* effet sombre pour lisibilité */
+}
+
+.hero-header {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.left-menu,
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.category-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+  padding: 60px 20px;
+}
+
+.category-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.category-tile img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.category-tile span {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category-tile:hover {
+  transform: scale(1.05);
+}
+
+.latest-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: black;
+  color: white;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.collection-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.collection-text .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ccc;
+  letter-spacing: 2px;
+}
+
+.collection-text h2 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+  font-family: 'Georgia', serif;
+  line-height: 1.4;
+}
+
+.collection-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.collection-text button {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.collection-images {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  flex-shrink: 0;
+}
+
+.collection-images img {
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.image-top {
+  top: 200px;
+  right: 300px;
+  z-index: 2;
+}
+
+.image-bottom {
+  top: 0px;
+  right: 150px;
+  z-index: 1;
+}
